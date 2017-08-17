@@ -34,16 +34,16 @@
   <header>
     <h1><a href="">Ravinderdeep Gill</a></h1>
     <h3>Chemical Engineer + Specialization in Particle Technology</h3>
-    <h4><a href="#projects"> See My Work </a> </h4>
+    <h4><a href="#Projects" class="smoothScroll"> See My Work </a> </h4>
 
-    <div class="arrow bounce"><a href="#About" class="title-fa"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+    <div class="arrow bounce"><a href="#About" class="smoothScroll" class="title-fa"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
   </header>
 
 
   <section>
-    <a name="About"></a>
+    <a id="About"></a>
     <div class="about">
-    <h3 class='About '>About Me</h3>
+    <h3 class='About'>About Me</h3>
     <div class=about-me>
 
       <div class="about-img">
@@ -63,10 +63,15 @@
 
 
   <section class="proj">
+    <a name="Projects"></a>
       <h3> Projects </h3>
+
     <button class="accordion"> Senior Project <span class="plusminus"></span></button>
     <div class="project">
-    <img src="images/Senior-Project-2.jpg" alt="ethane">
+      <div>
+        <img src="images/Senior-Project-2.jpg" alt="ethane">
+      </div>
+
     <ul>
         <li> Worked on evaluating the techo-economic feasibility of ethylene production via bioethanol dehydration </li>
         <li> Performed a complete optimization and economic analysis usind discounted cash flow and factored estimates</li>
@@ -78,7 +83,9 @@
 
     <button class="accordion"> Research Assistant <span class="plusminus"></span></button>
     <div class="project">
+      <div>
       <img src="images/Nanoparticle.jpg" alt="nanoparticle">
+    </div>
       <ul>
         <li> Assisted a graduate student researching the use of nanoparticles in penetrating the blood brain barrier in vitro studies</li>
         <li> Casted films containing polystyrene nanoparticles to elicit physical deformation into different shapes(spheres, rods, and discs) </li>
@@ -88,52 +95,15 @@
 
     <button class="accordion"> Research Intern <span class="plusminus"></span></button>
     <div class="project">
-      <img src="images/CFWO.jpg" alt="utep">
+      <div>
+        <img src="images/CFWO.jpg" alt="utep">
+      </div>
       <ul>
         <li>Performed high temperature processing techniques for the synthesis of tungsten substitued cobalt ferrite ceramic libraries </li>
         <li>Analyzed ceramic crystal structure, surface morphology, and dielectric properties using X-Ray Diffration (XRD) and Scanning Electron Microscopy (SEM) </li>
         <li>Producted thin ceramic films using Physical Vapor Deposition for nuclear reactor applications </li>
       </ul>
     </div>
-
-
-  </section>
-
-  <!-- <section>
-    <a name="Projects"></a>
-    <h3> Projects </h3>
-    <section class="projects">
-      <div class="row1">
-        <div class="senior-project">
-          <h4>Senior Project</h4>
-          <ul>
-              <li> Worked on evaluating the techo-economic feasibility of ethylene production via bioethanol dehydration </li>
-              <li> Performed a complete optimization and economic analysis usind discounted cash flow and factored estimates</li>
-              <li> Developed Aspen HYSYS simulations using optimal values of design variables and equipment sizes </li>
-              <li> Worked in a team of three to prepare a technical report and present to an executive board </li>
-          </ul>
-        </div>
-        <div class="ucsb-reserach">
-          <h4>Research Assistant</h4>
-          <ul>
-            <li> Assisted a graduate student researching the use of nanoparticles in penetrating the blood brain barrier in vitro studies</li>
-            <li> Casted films containing polystyrene nanoparticles to elicit physical deformation into different shapes(spheres, rods, and discs) </li>
-            <li> Performed nanoparticle size and shape characterization using DLS and SEM </li>
-          </ul>
-        </div>
-        <div class="utep-intern">
-          <h4>Reserach Intern</h4>
-          <ul>
-            <li>Performed high temperature processing techniques for the synthesis of tungsten substitued cobalt ferrite ceramic libraries </li>
-            <li>Analyzed ceramic crystal structure, surface morphology, and dielectric properties using X-Ray Diffration (XRD) and Scanning Electron Microscopy (SEM) </li>
-            <li>Producted thin ceramic films using Physical Vapor Deposition for nuclear reactor applications </li>
-          </ul>
-        </div>
-      </div>
-    </section> -->
-
-  </section>
-
 
 <section>
     <a name="Contact"></a>
@@ -170,5 +140,7 @@
 
   <script src="js/vendor/jquery-1.12.0.min.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="smoothscroll.js"></script>
 </body>
 </html>
