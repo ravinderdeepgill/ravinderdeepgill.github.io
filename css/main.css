@@ -310,25 +310,25 @@ button.accordion {
   overflow: hidden;
 }
 .project div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   padding: 5px 0px 5px 20px;
   flex-basis: 45%;
   height: 55vh;
   overflow: hidden;
 }
 
-/*.project img {
-  width: 100%;
-
-}*/
 .project ul {
   flex-basis: 48%;
   padding: 10px;
-  margin: 80px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .project li {
   padding: 5px 10px;
-
 }
 
 /*.showp {
@@ -440,34 +440,29 @@ Base styles: Media Inqueries
 
 
 @media screen and (max-width: 1103px) {
-  .project {
-    display: block;
-  }
-  .project div {
-    flex-basis: 99%;
-    display:block;
-
-  }
-  .project ul {
-    flex-basis: 99%;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 919px) {
-  .senior-project, .ucsb-reserach, .utep-intern {
-    flex-basis: 95%;
-   justify-content: center;
-   text-align: center;
-    height: 70vh;
-    margin: 5px 0px 5px 20px;
-
-  }
   form {
     padding: 45px 100px;
   }
 }
 
+
+@media screen and (max-width: 880px) {
+  .project {
+    display: block;
+    padding: 10px;
+  }
+  .project img {
+    display: block;
+    padding: 0;
+  }
+  .project div{
+    padding: 0;
+  }
+  .project ul{
+    display: block;
+    padding:0;
+  }
+}
 @media screen and (max-width: 760px) {
   .hamburger {
     display: block;

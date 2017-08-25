@@ -17,6 +17,9 @@ $('.hamburger').on('click', function() {
 
 //When the user clicks on the anchor links in the hambuger menu
   //hide the dropdown list
+$('.show a').on('click',function(){
+  console.log('clicked');
+});
 
 
 
@@ -28,6 +31,7 @@ $('.smoothScroll').on('click', function(e) {
   console.log(e.target);
   // prevent the standard link operation on click
   e.preventDefault();
+  $('.show').removeClass('show');
   // use the href of the link to identify what
   // section to scroll to
   var thisTarget = $(this).attr('href');
