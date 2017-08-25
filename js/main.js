@@ -14,17 +14,18 @@ $('.hamburger').on('click', function() {
 });
 
 
-//When the user clicks the angle down icon, take it to the about me section with
-// a class of fa-angle-down with some transitions
-$('.fa-angle-down').on('click', function() {
 
-});
+//When the user clicks on the anchor links in the hambuger menu
+  //hide the dropdown list
+
+
 
 
 // Smooth scroll this mother!
 
 // Do it when someone clicks a nav link
 $('.smoothScroll').on('click', function(e) {
+  console.log(e.target);
   // prevent the standard link operation on click
   e.preventDefault();
   // use the href of the link to identify what
@@ -39,13 +40,7 @@ $('.smoothScroll').on('click', function(e) {
   }, 600);
 });
 
-// jQuery(document).ready(function($) {
-//
-// 	$(".scroll").click(function(event){
-// 		event.preventDefault();
-// 		$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-// 	});
-// });
+
 
 $('.project').hide();
 

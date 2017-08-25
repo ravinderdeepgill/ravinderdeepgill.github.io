@@ -264,7 +264,8 @@ section h3, footer h3 {
   color: white;
   font-size: 23px;
   font-family: "Lato", sans-serif;
-  background-color: #44545E;;
+  background-color: #44545E;
+  margin: 5px 0px;
 
 
 }
@@ -301,14 +302,24 @@ button.accordion {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+  margin: 5px 0px;
 
-.project img {
+}
+.project img{
+  width: 100%;
+  overflow: hidden;
+}
+.project div {
   padding: 5px 0px 5px 20px;
   flex-basis: 45%;
   height: 55vh;
+  overflow: hidden;
 }
 
+/*.project img {
+  width: 100%;
+
+}*/
 .project ul {
   flex-basis: 48%;
   padding: 10px;
@@ -327,6 +338,14 @@ button.accordion {
 .plusminus {
     float:right;
     font-size: 20px;
+}
+
+input:focus {
+    outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+textarea:focus {
+    outline: -webkit-focus-ring-color auto 5px !important;
 }
 /* ==========================================================================
 Base styles: FOOTER
@@ -420,6 +439,21 @@ Base styles: Media Inqueries
 }
 
 
+@media screen and (max-width: 1103px) {
+  .project {
+    display: block;
+  }
+  .project div {
+    flex-basis: 99%;
+    display:block;
+
+  }
+  .project ul {
+    flex-basis: 99%;
+    display: block;
+  }
+}
+
 @media screen and (max-width: 919px) {
   .senior-project, .ucsb-reserach, .utep-intern {
     flex-basis: 95%;
@@ -460,8 +494,6 @@ Base styles: Media Inqueries
   nav a:hover {
     text-transform: uppercase;
   }
-
-
   .about-img img{
     display: flex;
     justify-content: center;
@@ -471,12 +503,17 @@ Base styles: Media Inqueries
   .about-p p {
     display: none;
   }
-  .project img{
-    width: 100%;
-    height: 40vh;
+  .project div{
+    flex-basis: 100%;
+    height: 50vh;
+    padding-right: 15px;
+    /*margin-bottom: 0px;
+    padding-bottom: 0px;*/
+
   }
   .project ul {
     display: block;
-    width: 100%;
+    margin:0px 0px 0px 10px;
+    padding: 0px 10px;
   }
 }
